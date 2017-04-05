@@ -1,8 +1,9 @@
 <?PHP
 	function ft_split($str)
 	{
-		$str = str_replace('  ', ' ', $str);
 		$tab = explode(" ", $str);
+		$tab = array_filter($tab);
+		sort($tab);
 		return ($tab);
 	}
 ?>

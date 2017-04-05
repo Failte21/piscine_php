@@ -1,9 +1,8 @@
 #!/usr/bin/php
-
 <?PHP
 	if (count($argv) < 4)
 	{
-		echo "Incorrect Parameters";
+		echo "Incorrect Parameters\n";
 		exit;
 	}
 	$a = trim($argv[1]);
@@ -20,5 +19,5 @@
 	else if ($op == '%' && $b != 0)
 		echo $a % $b."\n";
 	else
-		echo "0";
+		echo "0\n";
 ?>
